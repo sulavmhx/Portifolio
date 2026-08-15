@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    // ---------- Certificate Lightbox ----------
     (function certificateViewer() {
         const viewer = document.getElementById('certificate-viewer');
         const image = document.getElementById('full-certificate');
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })();
 
-    // ---------- Mobile Navigation Toggle ----------
     (function mobileNav() {
         const menuIcon = document.getElementById('menu-icon');
         const navbar = document.querySelector('.navbar');
