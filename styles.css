@@ -15,8 +15,6 @@ html, body {
     color: #222;
 }
 
-
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -160,6 +158,14 @@ section {
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
 
 .info-box {
