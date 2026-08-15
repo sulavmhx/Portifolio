@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulav Man Hada | Portfolio</title>
+    <link rel="icon" type="image/png" href="Me/Photo.jpg">
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Sulav Man Hada</span></a>
+        <ul class="navbar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li class="navbar-github"><a href="https://github.com/sulavmhx" target="_blank" rel="noopener">Visit GitHub</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false"></i>
+        <a href="https://github.com/sulavmhx" target="_blank" rel="noopener" class="visit-btn">Visit GitHub</a>
+    </header>
+
+    <main class="main-content">
+        <section id="about" class="about">
+            <div class="about-container">
+                <img src="me/Photo.jpg" alt="Sulav Man Hada">
+                <div class="info-box">
+                    <div class="text">
+                        <h3>Hi, I'm</h3>
+                        <p>Sulav Man Hada</p>
+                        <span>BIT 2nd year Student</span>
+                    </div>
+                    <div class="btn-group">
+                        <a href="CV.pdf" download class="btn">Download CV</a>
+                        <a href="#contact" class="btn">Contact Me</a>
+                    </div>
+                    <div class="socials">
+                        <a href="mailto:sulavhada01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/sulavmhx" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sulav-man-hada-7358aa372/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/hada.sulav" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/zyrox_0x/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-info">
+                <div class="grid">
+                    <div class="grid-card">
+                        <i class="fa-solid fa-code"></i>
+                        <span>C/C++</span>
+                        <h3>2.5 years</h3>
+                        <p>Experienced in C/C++ programming with personal and open-source projects.</p>
+                    </div>
+                    <div class="grid-card">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>Graphic Design</span>
+                        <h3>2.3 years</h3>
+                        <p>Created posters and graphics for institutions, friends, and personal projects.</p>
+                    </div>
+                    <div class="grid-card">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Data Analytics</span>
+                        <h3>0.5 years</h3>
+                        <p>Skilled in data cleaning, organization, and basic data analysis.</p>
+                    </div>
+                    <div class="grid-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Cyber Security</span>
+                        <h3>1.5 years</h3>
+                        <p>Studied web security, penetration testing, and SQL injection concepts.</p>
+                    </div>
+                </div>
+                <img src="me/Photo.jpg" alt="Profile Photo">
+            </div>
+        </section>
+
+        <section id="projects" class="project">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="Project/NumCov.png" alt="Number Conversion and Bitwise Tools screenshot">
+                    <span>Number Conversion and Bitwise Tools</span>
+                    <p>A C project designed to convert numbers between binary, decimal, octal,
+                        and hexadecimal formats, while also demonstrating bitwise operations such as
+                        AND, OR, XOR, NOT, and bit shifting.
+                    </p>
+                    <div class="btn-group">
+                        <a href="https://github.com/sulavmhx/Number-Conversion-System" target="_blank" rel="noopener" class="btn">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="certificates" class="certificates">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificate-grid">
+                    <div class="certificate-card">
+                        <img src="Certificates/Dummy2.avif" alt="Certificate 1" onclick="openCertificate(this.src)">
+                        <span>Dummy Certificate 1</span>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="Certificates/Dummy.jpg" alt="Certificate 2" onclick="openCertificate(this.src)">
+                        <span>Dummy Certificate 2</span>
+                    </div>
+                </div>
+            </section>
+    <section id="contact" class="contacts">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Feel free to reach out for collaborations, projects, or just a quick chat!</p>
+            
+            <div class="contact-container">
+                <!-- Left Side: Interactive Contact Cards -->
+                <div class="contact-cards">
+                    <a href="mailto:sulavhada01@gmail.com" class="contact-card">
+                        <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="card-info">
+                            <span>Email</span>
+                            <p>sulavhada01@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/sulavmhx" target="_blank" rel="noopener" class="contact-card">
+                        <div class="card-icon"><i class="fa-brands fa-github"></i></div>
+                        <div class="card-info">
+                            <span>GitHub</span>
+                            <p>@sulavmhx</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sulav-man-hada-7358aa372/" target="_blank" rel="noopener" class="contact-card">
+                        <div class="card-icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="card-info">
+                            <span>LinkedIn</span>
+                            <p>Sulav Man Hada</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/hada.sulav" target="_blank" rel="noopener" class="contact-card">
+                        <div class="card-icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="card-info">
+                            <span>Facebook</span>
+                            <p>Sulav Hada</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/zyrox_0x/" target="_blank" rel="noopener" class="contact-card">
+                        <div class="card-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="card-info">
+                            <span>Instagram</span>
+                            <p>@zyrox_0x</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <form class="contact-form" action="https://formspree.io/f/mdenlkjw" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn send-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+        <p class="copyright">© 2026 Sulav Man Hada. All rights reserved.</p>
+    </footer>
+
+    <div id="certificate-viewer" class="certificate-viewer" role="dialog" aria-modal="true" aria-label="Certificate Viewer">
+        <span class="close-certificate" onclick="closeCertificate()">&times;</span>
+        <img id="full-certificate" src="" alt="Full Certificate View">
+    </div>
+
+    <!-- Match exact file name: portifolio.js -->
+    <script src="portifolio.js"></script>
+</body>
+</html>
