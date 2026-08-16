@@ -161,7 +161,7 @@ li a.active-link::before {
 }
 
 section {
-    padding: 5rem 5%;
+    padding: 6.25rem 5% 5rem;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -283,8 +283,9 @@ section {
     margin-bottom: 3rem;
 }
 
+/* Fixed PC top padding for skills section */
 .skills {
-    padding-top: 10rem; 
+    padding-top: 6.25rem; 
 }
 
 .skills-info {
@@ -734,12 +735,10 @@ footer ul li a:hover {
         height: 200px;
     }
 
-    /* Skills section with ~0.5cm (1.25rem) extra top gap */
     .skills {
         padding-top: 7.5rem;
     }
 
-    /* All other sections updated to clear header properly */
     .project,
     .certificates,
     .contacts {
