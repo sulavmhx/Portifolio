@@ -726,7 +726,24 @@ footer ul li a:hover {
     }
 
     .about {
-        padding-top: 9rem;
+        padding-top: 7rem;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Skills section with ~0.5cm (1.25rem) extra top gap */
+    .skills {
+        padding-top: 7.5rem;
+    }
+
+    /* All other sections updated to clear header properly */
+    .project,
+    .certificates,
+    .contacts {
+        padding-top: 6.25rem;
     }
 
     .contact-container {
@@ -738,6 +755,11 @@ footer ul li a:hover {
 @media (max-width: 480px) {
     header {
         padding: 0.6rem 1.2rem;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
     }
 
     .info-box p {
