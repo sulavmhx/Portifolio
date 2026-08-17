@@ -167,7 +167,7 @@ section {
     margin: 0 auto;
 }
 
-.about {
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,12 +176,34 @@ section {
     padding-bottom: 2rem;
 }
 
-.about .about-container {
+.home-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
     width: 100%;
+}
+
+.about {
+    padding-top: 15rem;
+    padding-bottom: 25rem; 
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2.section-title {
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+    opacity: 0.9;
 }
 
 .profile-image {
@@ -223,7 +245,6 @@ section {
     font-weight: 600;
 }
 
-/* Typing Cursor Animation */
 .typing-text {
     border-right: 2px solid #0099ff;
     padding-right: 4px;
@@ -268,22 +289,29 @@ section {
 
 .socials a {
     color: #222;
-    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
 .socials a:hover {
-    transform: translateY(-3px);
-    color: #0099ff;
+    transform: translateY(-2px);
+    color: #ffffff;
+    background: linear-gradient(135deg, rgb(0, 157, 255), rgb(255, 0, 255));
+    box-shadow: 0 4px 15px rgba(0, 157, 255, 0.5);
 }
 
 .section-title {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
-/* Fixed PC top padding for skills section */
 .skills {
     padding-top: 6.25rem; 
 }
@@ -471,9 +499,10 @@ section {
 }
 
 .contact-card:hover .card-icon {
-    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    background: rgb(0, 157, 255);
     color: #ffffff;
     border-color: transparent;
+    box-shadow: 0 6px 20px rgba(0, 204, 255, 0.832);
 }
 
 .card-info span {
@@ -535,14 +564,6 @@ section {
 
 .send-btn {
     transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.send-btn:disabled {
-    cursor: not-allowed;
-    opacity: 0.9;
-}
-
-.send-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -556,7 +577,11 @@ section {
     border: none;
     border-radius: 0.8rem;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.send-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
 }
 
 .send-btn:hover {
@@ -595,7 +620,6 @@ section {
     line-height: 1;
 }
 
-/* Back to Top Floating Button */
 #back-to-top {
     position: fixed;
     bottom: 2rem;
@@ -660,7 +684,7 @@ footer ul li a:hover {
     color: #777;
 }
 
-/* Screen Width Adjustments */
+/* Responsive Media Queries */
 @media (max-width: 1024px) {
     header {
         width: 95%;
@@ -712,7 +736,7 @@ footer ul li a:hover {
         text-align: center;
     }
 
-    .about .about-container,
+    .home-container,
     .skills-info {
         flex-direction: column;
         gap: 2rem;
@@ -726,7 +750,7 @@ footer ul li a:hover {
         padding: 4rem 5% 2rem;
     }
 
-    .about {
+    .home {
         padding-top: 7rem;
     }
 
@@ -736,7 +760,7 @@ footer ul li a:hover {
     }
 
     .skills {
-        padding-top: 7.5rem;
+        padding-top: 6.25rem;
     }
 
     .project,
