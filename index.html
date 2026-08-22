@@ -7,10 +7,14 @@
     <meta name="description"
       content="Official portfolio of Sulav Man Hada, an IT student and developer showcasing projects, skills, certificates and experience.">
     <link rel="icon" type="image/png" href="Me/Photo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="header">
         <a href="#" class="logo"><span>Sulav Man Hada</span></a>
         
@@ -31,7 +35,7 @@
         <i class="fa-solid fa-bars" id="menu-icon" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false"></i>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
         <section id="home" class="home">
             <div class="home-container">
                 <img src="Me/Photo.jpg" alt="Sulav Man Hada" class="profile-image">
@@ -115,11 +119,11 @@
             <h2 class="section-title">Certificates</h2>
             <div class="certificate-grid">
                 <div class="certificate-card">
-                    <img src="Certificates/Dummy2.avif" alt="Certificate 1" onclick="openCertificate(this.src)">
+                    <img src="Certificates/Dummy2.avif" alt="Certificate 1">
                     <span>Dummy Certificate 1</span>
                 </div>
                 <div class="certificate-card">
-                    <img src="Certificates/Dummy.jpg" alt="Certificate 2" onclick="openCertificate(this.src)">
+                    <img src="Certificates/Dummy.jpg" alt="Certificate 2">
                     <span>Dummy Certificate 2</span>
                 </div>
             </div>
@@ -203,13 +207,13 @@
     </footer>
 
     <div id="certificate-viewer" class="certificate-viewer" role="dialog" aria-modal="true" aria-label="Certificate Viewer">
-        <span class="close-certificate" onclick="closeCertificate()">&times;</span>
+        <span class="close-certificate">&times;</span>
         <img id="full-certificate" src="" alt="Full Certificate View">
     </div>
 
     <button id="back-to-top" aria-label="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
     </button>
-    <script src="portifolio.js"></script>
+    <script src="portfolio.js" defer></script>
 </body>
 </html>

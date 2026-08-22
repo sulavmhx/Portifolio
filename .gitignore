@@ -1,0 +1,10 @@
+# Ignore a specific file
+
+# Ignore an entire folder (include trailing slash)
+freebuff/
+
+# Ignore all files ending with .log
+*.log
+
+# Ignore environment variable secret files
+.env
